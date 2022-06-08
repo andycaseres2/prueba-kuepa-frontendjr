@@ -1,6 +1,7 @@
-import { Home } from './Components/Home'
-import { NavbarLeft } from './Components/NavbarLeft'
-import { Navbarright } from './Components/Navbarright'
+import { Home } from "./Components/Home";
+import { NavbarLeft } from "./Components/NavbarLeft";
+import { Navbarright } from "./Components/Navbarright";
+import "./app.css";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Home />
       <Navbarright />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
