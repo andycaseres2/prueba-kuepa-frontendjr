@@ -6,7 +6,7 @@ import React from "react";
 export const Perfil = () => {
   return (
     <>
-      <Stack pb="100px">
+      <Stack pb="100px" marginLeft="50px">
         <Text fontSize="40px">Hola, Name</Text>
         <Stack flexDirection="row" alignItems="center">
           <Stack

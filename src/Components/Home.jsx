@@ -12,6 +12,8 @@ export const Home = () => {
         ml="12rem"
         mr="12rem"
         borderRadius="20px"
+        position="relative"
+        bottom="8px"
       >
         <Header />
         <Perfil />

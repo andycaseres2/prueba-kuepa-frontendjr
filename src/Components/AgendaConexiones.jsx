@@ -11,8 +11,9 @@ const AgendaConexiones = () => {
       alignItems="center"
       backgroundColor="white"
       borderRadius="20px"
-      width="100%"
+      width="90%"
       paddingBottom="40px"
+      marginLeft="50px"
     >
       <Box padding={3}>
         <Text

@@ -7,7 +7,7 @@ export const Conexiones = () => {
   return (
     <div>
       <Stack flexDirection="row" width="100%">
-        <Stack width="50%" marginRight="20px">
+        <Stack width="50%">
           <AgendaConexiones />
         </Stack>
         <Stack width="50%">
