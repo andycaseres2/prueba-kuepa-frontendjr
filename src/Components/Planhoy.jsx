@@ -5,15 +5,16 @@ import { BsChatLeftText } from "react-icons/bs";
 
 export const Planhoy = () => {
   return (
-    <Stack pl="50px" width="90%" position="relative" bottom="50px">
+    <Stack width="90%" position="relative" bottom="50px">
       {/* title */}
       <Stack
         flexDirection="row"
-        justifyContent="space-between"
+        justifyContent="space-around"
         alignItems="center"
         pb={4}
         position="relative"
         bottom="15px"
+        right="20px"
       >
         <Text fontSize="40px">Tu plan de hoy</Text>
         <Box display="flex" justifyContent="center" alignItems="center">
@@ -30,6 +31,7 @@ export const Planhoy = () => {
         flexWrap="wrap"
         width="100%"
         gap="30px"
+        pr="40px"
       >
         {/* card1 */}
         <Stack

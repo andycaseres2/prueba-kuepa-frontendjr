@@ -9,7 +9,7 @@ export const Header = () => {
         pt="40px"
         pb="40px"
         pl="50px"
-        pr="150px"
+        pr="250px"
         justifyContent="space-between"
         alignItems="center"
         flexDirection="row"

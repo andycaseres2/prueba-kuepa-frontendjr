@@ -5,11 +5,13 @@ export const Navbarright = () => {
   return (
     <div>
       <Stack
-        width="12rem"
+        width="16rem"
         height="100vh"
-        backgroundColor="blue.300"
+        backgroundColor="#1A365D"
         position="relative"
         bottom="8px"
+        borderLeftRadius="80px"
+        zIndex={99999999}
       >
         <Text>Rigeh</Text>
       </Stack>

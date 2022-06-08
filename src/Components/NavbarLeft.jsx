@@ -4,7 +4,13 @@ import { Stack, Text } from "@chakra-ui/react";
 export const NavbarLeft = () => {
   return (
     <>
-      <Stack width="12rem" height="100vh" backgroundColor="blue.300">
+      <Stack
+        width="20rem"
+        height="100%"
+        backgroundColor="#1A365D"
+        zIndex={1}
+        position="absolute"
+      >
         <Text>Logo</Text>
       </Stack>
     </>
