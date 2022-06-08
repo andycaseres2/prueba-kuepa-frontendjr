@@ -7,7 +7,12 @@ import { Perfil } from "./Perfil";
 export const Home = () => {
   return (
     <>
-      <Stack backgroundColor="#EDF2F7" paddingLeft="15rem" paddingRight="15rem">
+      <Stack
+        backgroundColor="#EDF2F7"
+        ml="12rem"
+        mr="12rem"
+        borderRadius="20px"
+      >
         <Header />
         <Perfil />
         <Conexiones />
