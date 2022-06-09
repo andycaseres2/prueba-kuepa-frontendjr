@@ -1,11 +1,11 @@
-import { Stack, Box, Text } from "@chakra-ui/react";
-import React from "react";
-import { MdArrowForwardIos, MdOutlineCall } from "react-icons/md";
-import { BsChatLeftText } from "react-icons/bs";
+import { Stack, Box, Text } from '@chakra-ui/react'
+import React from 'react'
+import { MdArrowForwardIos, MdOutlineCall } from 'react-icons/md'
+import { BsChatLeftText } from 'react-icons/bs'
 
 export const Planhoy = () => {
   return (
-    <Stack width="90%" position="relative" bottom="50px">
+    <Stack width="80%" position="relative" bottom="50px">
       {/* title */}
       <Stack
         flexDirection="row"
@@ -16,9 +16,9 @@ export const Planhoy = () => {
         bottom="15px"
         right="20px"
       >
-        <Text fontSize="40px">Tu plan de hoy</Text>
+        <Text fontSize="30px">Tu plan de hoy</Text>
         <Box display="flex" justifyContent="center" alignItems="center">
-          <Text>Ir a la gestion de llamados</Text>
+          <Text fontSize="15px">Ir a la gestion de llamados</Text>
           <MdArrowForwardIos />
         </Box>
       </Stack>
@@ -26,19 +26,19 @@ export const Planhoy = () => {
       {/* container cards */}
       <Stack
         flexDirection="row"
-        justifyContent="center"
         alignItems="center"
         flexWrap="wrap"
-        width="100%"
-        gap="30px"
-        pr="40px"
+        width="110%"
+        gap="15px"
+        position="relative"
+        right="20px"
       >
         {/* card1 */}
         <Stack
-          width="300px"
+          width="220px"
           backgroundColor="white"
           borderRadius="20px"
-          padding={4}
+          padding="10px"
           flexDirection="row"
           justifyContent="center"
         >
@@ -48,8 +48,8 @@ export const Planhoy = () => {
             alignItems="center"
           >
             <Box
-              width="130px"
-              height="130px"
+              width="100px"
+              height="100px"
               backgroundColor="purple"
               borderRadius="20px"
               display="flex"
@@ -57,9 +57,9 @@ export const Planhoy = () => {
               alignItems="center"
             >
               <Box
-                padding="1.5rem"
-                width="160px"
-                height="160px"
+                padding="1rem"
+                width="110px"
+                height="110px"
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
@@ -68,7 +68,7 @@ export const Planhoy = () => {
                   padding=".5rem"
                   backgroundColor="white"
                   borderRadius="100%"
-                  fontSize="50px"
+                  fontSize="30px"
                   color="purple"
                   textAlign="center"
                 >
@@ -77,18 +77,18 @@ export const Planhoy = () => {
               </Box>
             </Box>
           </Stack>
-          <Stack pl={4}>
-            <Text>Leads de primer contacto</Text>
+          <Stack pl={2}>
+            <Text fontSize="13px">Leads de primer contacto</Text>
             <Box>
               <Box display="flex" alignItems="center">
-                <MdOutlineCall fontSize="22px" />
-                <Text fontSize="22px" pl={2}>
+                <MdOutlineCall fontSize="16px" />
+                <Text fontSize="16px" pl={2}>
                   15
                 </Text>
               </Box>
               <Box display="flex" alignItems="center">
-                <BsChatLeftText fontSize="22px" />
-                <Text fontSize="22px" pl={2}>
+                <BsChatLeftText fontSize="16px" />
+                <Text fontSize="16px" pl={2}>
                   15
                 </Text>
               </Box>
@@ -97,12 +97,14 @@ export const Planhoy = () => {
         </Stack>
         {/* card 2 */}
         <Stack
-          width="300px"
+          width="220px"
           backgroundColor="white"
           borderRadius="20px"
-          padding={4}
+          padding="10px"
           flexDirection="row"
           justifyContent="center"
+          position="relative"
+          bottom="4px"
         >
           <Stack
             flexDirection="row"
@@ -110,8 +112,8 @@ export const Planhoy = () => {
             alignItems="center"
           >
             <Box
-              width="130px"
-              height="130px"
+              width="100px"
+              height="100px"
               backgroundColor="purple"
               borderRadius="20px"
               display="flex"
@@ -119,9 +121,9 @@ export const Planhoy = () => {
               alignItems="center"
             >
               <Box
-                padding="1.5rem"
-                width="160px"
-                height="160px"
+                padding="1rem"
+                width="110px"
+                height="110px"
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
@@ -130,7 +132,7 @@ export const Planhoy = () => {
                   padding=".5rem"
                   backgroundColor="white"
                   borderRadius="100%"
-                  fontSize="50px"
+                  fontSize="30px"
                   color="purple"
                   textAlign="center"
                 >
@@ -139,18 +141,18 @@ export const Planhoy = () => {
               </Box>
             </Box>
           </Stack>
-          <Stack pl={4}>
-            <Text>Leads de primer contacto</Text>
+          <Stack pl={2}>
+            <Text fontSize="13px">Leads de primer contacto</Text>
             <Box>
               <Box display="flex" alignItems="center">
-                <MdOutlineCall fontSize="22px" />
-                <Text fontSize="22px" pl={2}>
+                <MdOutlineCall fontSize="16px" />
+                <Text fontSize="16px" pl={2}>
                   15
                 </Text>
               </Box>
               <Box display="flex" alignItems="center">
-                <BsChatLeftText fontSize="22px" />
-                <Text fontSize="22px" pl={2}>
+                <BsChatLeftText fontSize="16px" />
+                <Text fontSize="16px" pl={2}>
                   15
                 </Text>
               </Box>
@@ -158,17 +160,14 @@ export const Planhoy = () => {
           </Stack>
         </Stack>
 
-        {/* card 3 */}
+        {/* Card 3 */}
         <Stack
-          width="300px"
+          width="220px"
           backgroundColor="white"
           borderRadius="20px"
-          padding={4}
+          padding="10px"
           flexDirection="row"
           justifyContent="center"
-          position="relative"
-          bottom="15px"
-          right="160"
         >
           <Stack
             flexDirection="row"
@@ -176,8 +175,8 @@ export const Planhoy = () => {
             alignItems="center"
           >
             <Box
-              width="130px"
-              height="130px"
+              width="100px"
+              height="100px"
               backgroundColor="purple"
               borderRadius="20px"
               display="flex"
@@ -185,9 +184,9 @@ export const Planhoy = () => {
               alignItems="center"
             >
               <Box
-                padding="1.5rem"
-                width="160px"
-                height="160px"
+                padding="1rem"
+                width="110px"
+                height="110px"
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
@@ -196,7 +195,7 @@ export const Planhoy = () => {
                   padding=".5rem"
                   backgroundColor="white"
                   borderRadius="100%"
-                  fontSize="50px"
+                  fontSize="30px"
                   color="purple"
                   textAlign="center"
                 >
@@ -205,18 +204,18 @@ export const Planhoy = () => {
               </Box>
             </Box>
           </Stack>
-          <Stack pl={4}>
-            <Text>Leads de primer contacto</Text>
+          <Stack pl={2}>
+            <Text fontSize="13px">Leads de primer contacto</Text>
             <Box>
               <Box display="flex" alignItems="center">
-                <MdOutlineCall fontSize="22px" />
-                <Text fontSize="22px" pl={2}>
+                <MdOutlineCall fontSize="16px" />
+                <Text fontSize="16px" pl={2}>
                   15
                 </Text>
               </Box>
               <Box display="flex" alignItems="center">
-                <BsChatLeftText fontSize="22px" />
-                <Text fontSize="22px" pl={2}>
+                <BsChatLeftText fontSize="16px" />
+                <Text fontSize="16px" pl={2}>
                   15
                 </Text>
               </Box>
@@ -225,5 +224,5 @@ export const Planhoy = () => {
         </Stack>
       </Stack>
     </Stack>
-  );
-};
+  )
+}

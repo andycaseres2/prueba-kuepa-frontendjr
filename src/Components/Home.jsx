@@ -1,11 +1,11 @@
-import { Stack } from "@chakra-ui/react";
-import React from "react";
-import { Conexiones } from "./Conexiones";
-import { Header } from "./Header";
-import { Perfil } from "./Perfil";
-import "./home.css";
+import { Stack } from '@chakra-ui/react'
+import React from 'react'
+import { Conexiones } from './Conexiones'
+import { Header } from './Header'
+import { Perfil } from './Perfil'
+import './home.css'
 
-export const Home = () => {
+export const Home = (players) => {
   return (
     <>
       <Stack
@@ -17,8 +17,8 @@ export const Home = () => {
       >
         <Header />
         <Perfil />
-        <Conexiones />
+        <Conexiones {...players} />
       </Stack>
     </>
-  );
-};
+  )
+}
