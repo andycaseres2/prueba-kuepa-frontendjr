@@ -1,18 +1,18 @@
 @media only screen and (max-width: 1024px) {
   .container-agenda {
-    width: 400px;
+    width: 400px !important;
   }
 
   .lineaagenda {
-    position: relative;
-    left: -15px;
+    position: relative !important;
+    left: -15px !important;
   }
   .containerangenda {
-    width: 100%;
+    width: 100% !important;
   }
 
   .containerangenda {
-    width: 50%;
+    width: 50% !important;
   }
   .title-agenda {
     font-size: 16px !important;
@@ -20,5 +20,12 @@
   }
   .containerangenda {
     width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .lineaagenda {
+    position: relative !important;
+    right: 82px !important;
   }
 }
