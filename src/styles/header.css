@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1024px) {
+  .containerheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-progress {
+    width: 100px;
+    font-size: 13px;
+    padding-left: 3px;
+  }
+  .text-header-number {
+    font-size: 18px;
+    padding-left: 15px;
+  }
+
+  .processcircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+  }
+
+  .extratext {
+    position: relative;
+    left: 10px;
+    top: 3px;
+  }
+
+  .containermeta {
+    position: relative;
+    right: 20px;
+    width: 240px;
+  }
+}

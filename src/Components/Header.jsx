@@ -1,6 +1,6 @@
 import { Stack, Input, Box, Button } from '@chakra-ui/react'
 import { FaFilter } from 'react-icons/fa'
-import BasicDatePicker from './BasicDatePicker'
+import './home.css'
 
 export const Header = () => {
   return (
@@ -9,7 +9,7 @@ export const Header = () => {
         pt="40px"
         pb="40px"
         pl="30px"
-        pr="250px"
+        pr="180px"
         justifyContent="space-between"
         alignItems="center"
         flexDirection="row"
@@ -25,7 +25,7 @@ export const Header = () => {
         </Box>
         {/* Calendar */}
         <Box>
-          <BasicDatePicker />
+          <input className="input" type="date" />
         </Box>
       </Stack>
     </>

@@ -2,12 +2,13 @@ import { Box, Stack, Text } from '@chakra-ui/react'
 import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
 import { Progress } from '@chakra-ui/react'
 import React from 'react'
+import '../styles/perfil.css'
 
 export const Perfil = () => {
   return (
     <>
       <Stack pb="100px" pl="30px">
-        <Text fontSize="40px">Hola, Name</Text>
+        <Text fontSize="40px">Hola, Andy</Text>
         <Stack flexDirection="row" alignItems="center">
           <Stack
             justifyContent="space-around"
@@ -19,11 +20,17 @@ export const Perfil = () => {
             borderRadius="20px"
           >
             <Stack>
-              <CircularProgress size="120px" value={50} color="red.400">
+              <CircularProgress
+                className="processcircle"
+                size="120px"
+                value={50}
+                color="red.400"
+              >
                 <CircularProgressLabel>50%</CircularProgressLabel>
               </CircularProgress>
             </Stack>
             <Stack
+              className="containerperfil"
               justifyContent="center"
               alignItems="center"
               width="200px"
@@ -33,7 +40,7 @@ export const Perfil = () => {
             >
               <Box display="flex">
                 <Box display="flex">
-                  <Text fontSize="16px" pr={2} pb={2}>
+                  <Text className="text-progress" fontSize="16px" pr={2} pb={2}>
                     Leads obtenidos
                   </Text>
                   <Text
@@ -41,18 +48,22 @@ export const Perfil = () => {
                     right="40px"
                     fontWeight="bold"
                     fontSize="24px"
+                    className="text-perfil-number"
                   >
                     50/100
                   </Text>
                 </Box>
               </Box>
               <Box display="flex">
-                <Text fontSize="16px">Matriculas Finalizadas</Text>
+                <Text className="text-progress " fontSize="16px">
+                  Matriculas Finalizadas
+                </Text>
                 <Text
                   position="relative"
                   right="40px"
                   fontWeight="bold"
                   fontSize="24px"
+                  className="text-perfil-number"
                 >
                   10/20
                 </Text>
@@ -66,7 +77,11 @@ export const Perfil = () => {
               right="60px"
               bottom="43px"
             >
-              <Text fontSize="16px" pr="30px">
+              <Text
+                fontSize="16px"
+                pr="30px"
+                className="text-progress extratext"
+              >
                 Cola de llamados
               </Text>
               <Text
@@ -74,6 +89,7 @@ export const Perfil = () => {
                 right="20px"
                 fontWeight="bold"
                 fontSize="24px"
+                className="text-perfil-number"
               >
                 50/100
               </Text>
@@ -81,6 +97,7 @@ export const Perfil = () => {
           </Stack>
           <Stack paddingLeft="50px">
             <Stack
+              className="containermeta"
               width="280px"
               height="170px"
               backgroundColor="white"

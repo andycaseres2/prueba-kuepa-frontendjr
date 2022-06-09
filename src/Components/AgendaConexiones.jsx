@@ -1,20 +1,23 @@
 import { Box, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
-import { MdOutlineCall } from 'react-icons/md'
-import { BsChatLeftText } from 'react-icons/bs'
-import { GiPlainCircle } from 'react-icons/gi'
 import * as API from '../services/setting'
 import { useState, useEffect } from 'react'
+import { PlayerItem } from './PlayerItem'
+import '../styles/agenda.css'
 
 const AgendaConexiones = () => {
   const [players, setPlayers] = useState([])
   useEffect(() => {
-    API.getAllPlayers().then((data) => {
+    API.getAllProPlayers().then((data) => {
       setPlayers(data)
     })
   }, [])
+
+  const newPlayers = players.slice(0, 5)
+
   return (
     <Stack
+      className="container-agenda"
       justifyContent="center"
       alignItems="center"
       backgroundColor="white"
@@ -30,152 +33,17 @@ const AgendaConexiones = () => {
           position="relative"
           right="100px"
           paddingLeft="50px"
+          className="title-agenda"
         >
           Conexiones de agenda para hoy
         </Text>
       </Box>
-      <Stack width="100%">
-        {/* USERS */}
-        <Stack
-          alignItems="center"
-          flexDirection="row"
-          justifyContent="space-around"
-          backgroundColor="blue.100"
-          padding={2}
-        >
-          <Box width="180px">
-            <Text fontSize="15"> Andres Camilo Melo Vargas</Text>
-          </Box>
-          <Box pl={4}>
-            <Text fontSize="15"> Llamar</Text>
-            <Text fontSize="13" color="grey">
-              Descuento temporada
-            </Text>
-          </Box>
-          <Box
-            width="120px"
-            display="flex"
-            justifyContent="space-around"
-            pl={4}
-          >
-            <GiPlainCircle />
-            <MdOutlineCall />
-            <BsChatLeftText />
-          </Box>
-        </Stack>
 
-        <Stack
-          alignItems="center"
-          flexDirection="row"
-          justifyContent="space-around"
-          backgroundColor="blue.100"
-          padding={2}
-        >
-          <Box width="180px">
-            <Text fontSize="15">{players.name}</Text>
-          </Box>
-          <Box pl={4}>
-            <Text fontSize="15"> Llamar</Text>
-            <Text fontSize="13" color="grey">
-              Descuento temporada
-            </Text>
-          </Box>
-          <Box
-            width="120px"
-            display="flex"
-            justifyContent="space-around"
-            pl={4}
-          >
-            <GiPlainCircle />
-            <MdOutlineCall />
-            <BsChatLeftText />
-          </Box>
-        </Stack>
+      {/* USERS */}
 
-        <Stack
-          alignItems="center"
-          flexDirection="row"
-          justifyContent="space-around"
-          backgroundColor="blue.100"
-          padding={2}
-        >
-          <Box width="180px">
-            <Text fontSize="15"> Andres Camilo Melo Vargas</Text>
-          </Box>
-          <Box pl={4}>
-            <Text fontSize="15"> Llamar</Text>
-            <Text fontSize="13" color="grey">
-              Descuento temporada
-            </Text>
-          </Box>
-          <Box
-            width="120px"
-            display="flex"
-            justifyContent="space-around"
-            pl={4}
-          >
-            <GiPlainCircle />
-            <MdOutlineCall />
-            <BsChatLeftText />
-          </Box>
-        </Stack>
-
-        <Stack
-          alignItems="center"
-          flexDirection="row"
-          justifyContent="space-around"
-          backgroundColor="blue.100"
-          padding={2}
-        >
-          <Box width="180px">
-            <Text fontSize="15"> Andres Camilo Melo Vargas</Text>
-          </Box>
-          <Box pl={4}>
-            <Text fontSize="15"> Llamar</Text>
-            <Text fontSize="13" color="grey">
-              Descuento temporada
-            </Text>
-          </Box>
-          <Box
-            width="120px"
-            display="flex"
-            justifyContent="space-around"
-            pl={4}
-          >
-            <GiPlainCircle />
-            <MdOutlineCall />
-            <BsChatLeftText />
-          </Box>
-        </Stack>
-
-        <Stack
-          alignItems="center"
-          flexDirection="row"
-          justifyContent="space-around"
-          backgroundColor="blue.100"
-          padding={2}
-        >
-          <Box width="180px">
-            <Text fontSize="15"> Andres Camilo Melo Vargas</Text>
-          </Box>
-          <Box pl={4}>
-            <Text fontSize="15"> Llamar</Text>
-            <Text fontSize="13" color="grey">
-              Descuento temporada
-            </Text>
-          </Box>
-          <Box
-            width="120px"
-            display="flex"
-            justifyContent="space-around"
-            pl={4}
-          >
-            <GiPlainCircle />
-            <MdOutlineCall />
-            <BsChatLeftText />
-          </Box>
-        </Stack>
-      </Stack>
+      {newPlayers.map((player) => (
+        <PlayerItem key={player.account_id} {...player} />
+      ))}
     </Stack>
   )
 }

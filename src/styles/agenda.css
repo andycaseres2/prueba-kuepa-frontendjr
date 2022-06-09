@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1024px) {
+  .container-agenda {
+    width: 400px;
+  }
+
+  .lineaagenda {
+    position: relative;
+    left: -15px;
+  }
+  .containerangenda {
+    width: 100%;
+  }
+
+  .containerangenda {
+    width: 50%;
+  }
+  .title-agenda {
+    font-size: 16px !important;
+    padding-left: 100px !important;
+  }
+  .containerangenda {
+    width: 100% !important;
+  }
+}

@@ -5,7 +5,7 @@ import { Header } from './Header'
 import { Perfil } from './Perfil'
 import './home.css'
 
-export const Home = (players) => {
+export const Home = () => {
   return (
     <>
       <Stack
@@ -17,7 +17,7 @@ export const Home = (players) => {
       >
         <Header />
         <Perfil />
-        <Conexiones {...players} />
+        <Conexiones />
       </Stack>
     </>
   )

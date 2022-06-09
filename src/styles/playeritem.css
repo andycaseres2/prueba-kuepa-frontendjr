@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1024px) {
+  .header-contact {
+    position: relative;
+    right: -10px !important;
+  }
+  .llamar {
+    position: relative;
+    right: -10px !important;
+  }
+  .icons {
+    position: relative;
+    justify-content: center;
+  }
+}

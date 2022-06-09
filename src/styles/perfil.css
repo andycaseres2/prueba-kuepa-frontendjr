@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1024px) {
+  .containerperfil {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .text-progress {
+    width: 100px !important;
+    font-size: 13px !important;
+    padding-left: 3px !important;
+  }
+  .text-perfil-number {
+    font-size: 18px !important;
+    padding-left: 15px !important;
+  }
+
+  .processcircle {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .extratext {
+    position: relative !important ;
+    left: 10px !important;
+    top: 3px !important;
+  }
+
+  .containermeta {
+    position: relative !important;
+    right: 20px !important;
+    width: 240px !important;
+  }
+}

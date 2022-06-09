@@ -2,6 +2,7 @@ import { Stack, Box, Text } from '@chakra-ui/react'
 import React from 'react'
 import { MdArrowForwardIos, MdOutlineCall } from 'react-icons/md'
 import { BsChatLeftText } from 'react-icons/bs'
+import planhoy from '../styles/planhoy.css'
 
 export const Planhoy = () => {
   return (
@@ -16,8 +17,15 @@ export const Planhoy = () => {
         bottom="15px"
         right="20px"
       >
-        <Text fontSize="30px">Tu plan de hoy</Text>
-        <Box display="flex" justifyContent="center" alignItems="center">
+        <Text className="title-planhoy" fontSize="30px">
+          Tu plan de hoy
+        </Text>
+        <Box
+          className="sub-planhoy"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
           <Text fontSize="15px">Ir a la gestion de llamados</Text>
           <MdArrowForwardIos />
         </Box>
@@ -25,6 +33,7 @@ export const Planhoy = () => {
 
       {/* container cards */}
       <Stack
+        className="container-planhoy-box"
         flexDirection="row"
         alignItems="center"
         flexWrap="wrap"
@@ -50,7 +59,7 @@ export const Planhoy = () => {
             <Box
               width="100px"
               height="100px"
-              backgroundColor="purple"
+              backgroundColor="blue.300"
               borderRadius="20px"
               display="flex"
               justifyContent="center"
@@ -69,7 +78,7 @@ export const Planhoy = () => {
                   backgroundColor="white"
                   borderRadius="100%"
                   fontSize="30px"
-                  color="purple"
+                  color="blue.300"
                   textAlign="center"
                 >
                   30%
@@ -114,7 +123,7 @@ export const Planhoy = () => {
             <Box
               width="100px"
               height="100px"
-              backgroundColor="purple"
+              backgroundColor="green.400"
               borderRadius="20px"
               display="flex"
               justifyContent="center"
@@ -133,7 +142,7 @@ export const Planhoy = () => {
                   backgroundColor="white"
                   borderRadius="100%"
                   fontSize="30px"
-                  color="purple"
+                  color="green.400"
                   textAlign="center"
                 >
                   30%

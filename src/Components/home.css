@@ -4,3 +4,11 @@
   margin-top: 0px !important;
   padding-left: 20px;
 }
+
+.input {
+  padding: 7px;
+  border-radius: 20px;
+  background-color: rgba(210, 205, 205, 0.742);
+  color: rgb(100, 98, 98);
+  font-size: 20px;
+}
