@@ -39,10 +39,11 @@ export const NavbarLeft = () => {
             <RiChat2Line size="30px" color="grey" />
           </Text>
           <Image
+            borderRadius="50px"
             boxSize="50px"
             objectFit="cover"
-            src="https://cdn-icons.flaticon.com/png/512/4140/premium/4140061.png?token=exp=1654752078~hmac=3a0fd46105693be89f93561daf478d58"
-            alt="Dan Abramov"
+            src="https://us.123rf.com/450wm/yupiramos/yupiramos2004/yupiramos200436847/145498923-dise%C3%B1o-de-ilustraci%C3%B3n-de-vector-de-icono-de-personaje-de-avatar-de-param%C3%A9dico-masculino.jpg?ver=6"
+            alt="Andy Caseres"
           />
         </Box>
       </Stack>
